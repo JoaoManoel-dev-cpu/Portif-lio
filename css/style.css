@@ -19,6 +19,11 @@ body {
     margin-right: 20px;
 }
 
+.email {
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+}
 .box-telefone {
     display: inline-block;
     text-align: center;
