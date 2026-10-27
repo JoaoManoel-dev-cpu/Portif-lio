@@ -1,73 +1,44 @@
+HTML
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - João Manoel</title>
-    <!-- CSS Externo -->
+    <title>Meu Portfólio</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome para os ícones -->
-    <link rel="stylesheet" href="/css/style.css">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- Cabeçalho -->
-    <header class="header">
-        <div class="header-container">
-            <div class="header-item">
-                <a href="https://www.linkedin.com/in/jo%C3%A3o-manoel-de-almeida-sales-e-silva-372a423a0/" target="_blank" rel="noopener noreferrer" class="social-icon">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-            </div>
-            
-            <div class="header-item phone-box">
-                <i class="fa-solid fa-phone social-icon"></i>
-                <span class="phone-number">(12) 99639-2907</span>
-            </div>
+    <!-- Cabeçalho Preto -->
+    <div class="cabecalho">
+        <a href="https://www.linkedin.com" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <div class="box-telefone">
+            <i class="fa-solid fa-phone"></i>
+            <br>
+            <span>(11) 99999-9999</span>
         </div>
-    </header>
+    </div>
 
-    <!-- Conteúdo Principal -->
-    <div class="container">
+    <!-- Conteúdo da Página -->
+    <div class="conteudo">
         
-        <!-- Sidebar Esquerda (25% de largura) -->
-        <aside class="sidebar">
-            <img src="Foto João só rosto.jpeg" alt="Foto de João Manoel" class="profile-pic">
-            <h1 class="profile-name">Miguel Brito</h1>
-            <p class="profile-title">Desenvolvedor de Software</p>
-        </aside>
+        <!-- Lado Esquerdo (Foto e Nome) -->
+        <div class="lado-esquerdo">
+            <img src="foto.jpg" alt="Minha Foto">
+            <h2>Miguel Brito</h2>
+        </div>
 
-        <!-- Corpo do Portfólio (75% de largura) -->
-        <main class="main-content">
-            <section class="section">
-                <h2>Sobre Mim</h2>
-                <p>
-                    Olá! Sou estudante de Desenvolvimento de Software Multiplataforma. Tenho paixão por criar interfaces modernas, responsivas e soluções computacionais eficientes.
-                </p>
-            </section>
-
-            <section class="section">
-                <h2>Conhecimentos e Habilidades</h2>
-                <ul class="skills-list">
-                    <li>HTML5 & CSS3 (Flexbox, Grid, Responsive Design)</li>
-                    <li>JavaScript</li>
-                    <li>Python & Análise de Dados</li>
-                    <li>Administração Linux & Shell Scripting</li>
-                </ul>
-            </section>
-
-            <section class="section">
-                <h2>Projetos</h2>
-                <div class="project-card">
-                    <h3>Projeto Web Responsive</h3>
-                    <p>Aplicação web focada em usabilidade, layout responsivo e estilização customizada.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Automação em Shell Script</h3>
-                    <p>Scripts em Bash para gerenciamento de arquivos e rotinas no Linux.</p>
-                </div>
-            </section>
-        </main>
+        <!-- Lado Direito (Corpo do Portfólio - 75%) -->
+        <div class="lado-direito">
+            <h2>Sobre Mim</h2>
+            <p>Olá! Sou estudante de desenvolvimento de software e este é o meu primeiro portfólio.</p>
+            
+            <h2>Meus Projetos</h2>
+            <p>Em breve adicionarei meus projetos aqui.</p>
+        </div>
 
     </div>
 
