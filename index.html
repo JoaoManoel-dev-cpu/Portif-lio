@@ -1,54 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Meu Portfólio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - João Manoel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="css/style.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <div class="cabecalho">
-        <a href="https://www.linkedin.com/in/jo%C3%A3o-manoel-de-almeida-sales-e-silva-372a423a0/" target="_blank">
-            <i class="fa-brands fa-linkedin"></i>
-        </a>
-        <div class="box-telefone">
-            <i class="fa-solid fa-phone"></i>
-            <br>
-            <span>(12) 99639-2907</span>
+    <header class="cabecalho">
+        <div class="header-container">
+            <a href="https://www.linkedin.com/in/jo%C3%A3o-manoel-de-almeida-sales-e-silva-372a423a0/" target="_blank" class="link-social" title="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <div class="box-contato">
+                <i class="fa-solid fa-phone"></i>
+                <span>(12) 99639-2907</span>
+            </div>
+
+            <div class="box-contato">
+                <i class="fa-solid fa-envelope"></i>
+                <span>jmanoel.almeidasales@gmail.com</span>
+            </div>
         </div>
-        <div class="email">
-            <span>jmanoel.almeidasales@gmail.com</span>
-        </div>
-    </div>
+    </header>
 
     <div class="conteudo">
         
-        <div class="lado-esquerdo">
-            <img src="Foto João só rosto.jpeg" alt="Minha Foto">
-            <h2>João Manoel de Almeida Sales e Silva</h2>
-        </div>
+        <aside class="lado-esquerdo">
+            <div class="card-perfil">
+                <img src="Foto João só rosto.jpeg" alt="Foto de João Manoel" class="foto-perfil">
+                <h2>João Manoel de Almeida Sales e Silva</h2>
+                <p class="tag-subtitulo">Game Dev & Designer</p>
+            </div>
+        </aside>
 
-        <div class="lado-direito">
-            <h2>Sobre Mim</h2>
-            <p>Olá! Me chamo João Manoel de Almeida Sales e Silva. Tenho 18 anos e tenho uma paixão em artes, programação de jogos e design.</p>
+        <main class="lado-direito">
             
-            <h2>Objetivos, formação e interesses.</h2>
-            <p>Um dos objetivos que tenho tido é ser um criador de jogos reconhecido e respeitado, encorajando milhares a poder criarem jogos a projetos, indepedente do que fosse. Em questão de objetivo profissional, o sonho de trabalhar em empresas de jogos reconhecidas estão sempre na mente.</p>
-            <h3>Formação</h3>
-            <p>Ensino Médio completo.</p>
-            <p>Técnico em Qualidade ETEC - Inicio: Janeiro - 2026 até Dezembro - 2026</p>
-            <p>Desenvolvimento de Software Multiplataforma FATEC - Inicio: Agosto - 2026</p>
+            <section class="secao">
+                <h2><i class="fa-solid fa-user"></i> Sobre Mim</h2>
+                <p>Olá! Me chamo João Manoel de Almeida Sales e Silva. Tenho 18 anos e tenho uma grande paixão por artes, programação de jogos e design.</p>
+            </section>
 
-            <h3>Trabalho atual</h3>
-            <p>Cinemark - Colinas Shopping: Atendimento ao Cliente.</p>
-            
-            <h2>Meus Projetos</h2>
-            <p>Projeto de API - Kurumin</p>
-            <h4>Contribuições para o projeto</h4>
-            <p>Programação adicional - <a href="https://github.com/JoaoManoel-dev-cpu/User-Stories" target="_blank">Repositório do Projeto</a></p>
-            
-        </div>
+            <section class="secao">
+                <h2><i class="fa-solid fa-bullseye"></i> Objetivos, Formação e Interesses</h2>
+                <p>Um dos meus grandes objetivos é ser um criador de jogos reconhecido e respeitado, encorajando milhares de pessoas a criarem seus próprios projetos. No âmbito profissional, busco atuar em empresas renomadas do setor de games.</p>
+                
+                <div class="bloco-info">
+                    <h3><i class="fa-solid fa-graduation-cap"></i> Formação</h3>
+                    <ul>
+                        <li><strong>Ensino Médio:</strong> Completo</li>
+                        <li><strong>Técnico em Qualidade (ETEC):</strong> Jan/2026 – Dez/2026</li>
+                        <li><strong>Desenvolvimento de Software Multiplataforma (FATEC):</strong> Início em Agost/2026</li>
+                    </ul>
+                </div>
+
+                <div class="bloco-info">
+                    <h3><i class="fa-solid fa-briefcase"></i> Trabalho Atual</h3>
+                    <p><strong>Cinemark (Colinas Shopping):</strong> Atendimento ao Cliente.</p>
+                </div>
+            </section>
+
+            <section class="secao">
+                <h2><i class="fa-solid fa-code"></i> Meus Projetos</h2>
+                
+                <div class="card-projeto">
+                    <h3>Projeto de API - Kurumin</h3>
+                    <h4>Contribuições para o projeto</h4>
+                    <p>
+                        Programação adicional - 
+                        <a href="https://github.com/JoaoManoel-dev-cpu/User-Stories" target="_blank" class="btn-github">
+                            <i class="fa-brands fa-github"></i> Repositório do Projeto
+                        </a>
+                    </p>
+                </div>
+            </section>
+
+        </main>
 
     </div>
 
