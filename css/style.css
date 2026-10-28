@@ -4,7 +4,6 @@ body {
     padding: 0;
 }
 
-/* Cabeçalho */
 .cabecalho {
     background-color: black;
     color: white;
@@ -34,7 +33,6 @@ body {
     font-size: 20px;
 }
 
-/* Layout Principal */
 .conteudo {
     display: flex;
     margin: 20px;
