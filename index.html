@@ -6,112 +6,85 @@
     <title>Portfólio - João Manoel</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tahoma:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="css/style.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- Simulação da Barra de Tarefas do XP no topo ou rodapé -->
-    <header class="cabecalho-xp">
+    <header class="cabecalho">
         <div class="header-container">
-            <div class="menu-iniciar">
-                <i class="fa-brands fa-windows"></i> <span>Iniciar</span>
+            <a href="https://www.linkedin.com/in/jo%C3%A3o-manoel-de-almeida-sales-e-silva-372a423a0/" target="_blank" class="link-social" title="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <div class="box-contato">
+                <i class="fa-solid fa-phone"></i>
+                <span>(12) 99639-2907</span>
             </div>
-            
-            <div class="infos-contato-xp">
-                <a href="https://www.linkedin.com/in/jo%C3%A3o-manoel-de-almeida-sales-e-silva-372a423a0/" target="_blank" class="link-social" title="LinkedIn">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-                <div class="box-contato">
-                    <i class="fa-solid fa-phone"></i>
-                    <span>(12) 99639-2907</span>
-                </div>
-                <div class="box-contato">
-                    <i class="fa-solid fa-envelope"></i>
-                    <span>jmanoel.almeidasales@gmail.com</span>
-                </div>
+
+            <div class="box-contato">
+                <i class="fa-solid fa-envelope"></i>
+                <span>jmanoel.almeidasales@gmail.com</span>
             </div>
         </div>
     </header>
 
     <div class="conteudo">
         
-        <!-- Janela da Esquerda (Perfil) -->
         <aside class="lado-esquerdo">
-            <div class="janela-xp">
-                <div class="barra-titulo">
-                    <span>Meu Computador - Perfil</span>
-                    <div class="botoes-janela">
-                        <button class="btn-min">_</button>
-                        <button class="btn-max">□</button>
-                        <button class="btn-fechar">×</button>
-                    </div>
-                </div>
-                <div class="conteudo-janela card-perfil">
-                    <img src="Foto João só rosto.jpeg" alt="Foto de João Manoel" class="foto-perfil">
-                    <h2>João Manoel de Almeida Sales e Silva</h2>
-                    <p class="tag-subtitulo">Game Dev & Designer</p>
-                </div>
+            <div class="card-perfil">
+                <img src="Foto João só rosto.jpeg" alt="Foto de João Manoel" class="foto-perfil">
+                <h2>João Manoel de Almeida Sales e Silva</h2>
+                <p class="tag-subtitulo">Game Dev & Designer</p>
             </div>
         </aside>
 
-        <!-- Janela da Direita (Conteúdo Principal) -->
         <main class="lado-direito">
             
-            <div class="janela-xp">
-                <div class="barra-titulo">
-                    <span>Explorador de Arquivos - Sobre Mim</span>
-                    <div class="botoes-janela">
-                        <button class="btn-min">_</button>
-                        <button class="btn-max">□</button>
-                        <button class="btn-fechar">×</button>
-                    </div>
+            <section class="secao">
+                <h2><i class="fa-solid fa-user"></i> Sobre Mim</h2>
+                <p>Olá! Me chamo João Manoel de Almeida Sales e Silva. Tenho 18 anos e tenho uma grande paixão por artes, programação de jogos e design.</p>
+            </section>
+
+            <section class="secao">
+                <h2><i class="fa-solid fa-bullseye"></i> Objetivos, Formação e Interesses</h2>
+                <p>Um dos meus grandes objetivos é ser um criador de jogos reconhecido e respeitado, encorajando milhares de pessoas a criarem seus próprios projetos. No âmbito profissional, busco atuar em empresas renomadas do setor de games.</p>
+                
+                <div class="bloco-info">
+                    <h3><i class="fa-solid fa-graduation-cap"></i> Formação</h3>
+                    <ul>
+                        <li><strong>Ensino Médio:</strong> Completo</li>
+                        <li><strong>Técnico em Qualidade (ETEC):</strong> Jan/2026 – Dez/2026</li>
+                        <li><strong>Desenvolvimento de Software Multiplataforma (FATEC):</strong> Início em Agost/2026</li>
+                    </ul>
                 </div>
-                <div class="conteudo-janela">
-                    <section class="secao">
-                        <h2><i class="fa-solid fa-user"></i> Sobre Mim</h2>
-                        <p>Olá! Me chamo João Manoel de Almeida Sales e Silva. Tenho 18 anos e tenho uma grande paixão por artes, programação de jogos e design.</p>
-                    </section>
 
-                    <section class="secao">
-                        <h2><i class="fa-solid fa-bullseye"></i> Objetivos, Formação e Interesses</h2>
-                        <p>Um dos meus grandes objetivos é ser um criador de jogos reconhecido e respeitado, encorajando milhares de pessoas a criarem seus próprios projetos. No âmbito profissional, busco atuar em empresas renomadas do setor de games.</p>
-                        
-                        <div class="bloco-info">
-                            <h3><i class="fa-solid fa-graduation-cap"></i> Formação</h3>
-                            <ul>
-                                <li><strong>Ensino Médio:</strong> Completo</li>
-                                <li><strong>Técnico em Qualidade (ETEC):</strong> Jan/2026 – Dez/2026</li>
-                                <li><strong>Desenvolvimento de Software Multiplataforma (FATEC):</strong> Início em Agost/2026</li>
-                            </ul>
-                        </div>
-
-                        <div class="bloco-info">
-                            <h3><i class="fa-solid fa-briefcase"></i> Trabalho Atual</h3>
-                            <p><strong>Cinemark (Colinas Shopping):</strong> Atendimento ao Cliente.</p>
-                        </div>
-                    </section>
-
-                    <section class="secao">
-                        <h2><i class="fa-solid fa-code"></i> Meus Projetos</h2>
-                        
-                        <div class="card-projeto">
-                            <h3>Projeto de API - Kurumin</h3>
-                            <h4>Contribuições para o projeto</h4>
-                            <p>
-                                Programação adicional - 
-                                <a href="https://github.com/Kurumin-DSM1-2026/API_DSM_1SEMESTE_2026/edit/main/README.md" target="_blank" class="btn-github">
-                                    <i class="fa-brands fa-github"></i> Repositório do Projeto
-                                </a>
-                            </p>
-                            <p><strong>Problema proposto:</strong> Como analista de crédito, quero visualizar um gráfico comparando a taxa de juros de crédito das maiores instituições financeiras do Brasil, para poder comparar quais são mais altas.</p>
-                            <p><strong>Tecnologias usadas:</strong> Pandas, Python.</p>
-                            <p><strong>Solução:</strong> O código feito propõe um sistema flexível onde é possível ver o gráfico comparativo.</p>
-                        </div>
-                    </section>
+                <div class="bloco-info">
+                    <h3><i class="fa-solid fa-briefcase"></i> Trabalho Atual</h3>
+                    <p><strong>Cinemark (Colinas Shopping):</strong> Atendimento ao Cliente.</p>
                 </div>
-            </div>
+            </section>
+
+            <section class="secao">
+                <h2><i class="fa-solid fa-code"></i> Meus Projetos</h2>
+                
+                <div class="card-projeto">
+                    <h3>Projeto de API - Kurumin</h3>
+                    <h4>Contribuições para o projeto</h4>
+                    <p>
+                        Programação adicional - 
+                        <a href="https://github.com/Kurumin-DSM1-2026/API_DSM_1SEMESTE_2026/edit/main/README.md" target="_blank" class="btn-github">
+                            <i class="fa-brands fa-github"></i> Repositório do Projeto
+                        </a>
+                    </p>
+                    <p> Problema proposto - Como analista de crédito, quero visualizar um gráfico comparando a taxa de juros de crédito  das maiores instituições financeiras do Brasil, para poder comparar quais são mais altas.</p>
+                    <p> Tecnologias usadas - Panda, Python.</p>
+                    <p> Solução - O código feito propõem uma sistema flexível onde é possível ver o gráfico comparativo.</p>
+                </div>
+            </section>
 
         </main>
 
