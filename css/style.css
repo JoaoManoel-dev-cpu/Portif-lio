@@ -22,7 +22,49 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+/* Estilos da Nova Aba de Navegação */
+.menu-navegacao {
+    display: flex;
+    align-items: center;
+}
+
+.link-menu {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 8px 14px;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.link-menu i {
+    color: #38bdf8;
+    font-size: 14px;
+}
+
+.link-menu:hover {
+    background-color: #0284c7;
+    color: #ffffff;
+    border-color: #0284c7;
+}
+
+.link-menu:hover i {
+    color: #ffffff;
+}
+
+.grupo-contatos {
+    display: flex;
     align-items: center;
     gap: 24px;
 }
@@ -202,6 +244,11 @@ body {
     .header-container {
         flex-direction: column;
         align-items: flex-start;
+        gap: 12px;
+    }
+
+    .grupo-contatos {
+        flex-wrap: wrap;
         gap: 12px;
     }
 
