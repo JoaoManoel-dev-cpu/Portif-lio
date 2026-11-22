@@ -77,6 +77,45 @@
         .voltar-home:hover {
             text-decoration: underline;
         }
+
+        /* Estilos da Nova Seção de Galeria de Desenvolvimento */
+        .secao-galeria {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #e2e8f0;
+        }
+        .grid-galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .card-galeria {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .card-galeria:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+        }
+        .img-galeria {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            background-color: #e2e8f0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .legenda-galeria {
+            padding: 16px;
+            font-size: 14px;
+            color: #334155;
+            line-height: 1.5;
+        }
     </style>
 </head>
 <body>
@@ -191,6 +230,36 @@
                         </div>
                     </div>
 
+                </div>
+            </section>
+
+            <!-- NOVA SEÇÃO: GALERIA DE DESENVOLVIMENTO -->
+            <section class="secao secao-galeria">
+                <h2><i class="fa-solid fa-images"></i> Desenvolvimento do Site</h2>
+                <p>Registros visuais e etapas de criação deste portfólio.</p>
+                
+                <div class="grid-galeria">
+                    
+                    <div class="card-galeria">
+                        <img src="imagemaqui" alt="Etapa do desenvolvimento 1" class="img-galeria">
+                        <div class="legenda-galeria">
+                            <p>textoaqui</p>
+                        </div>
+                    </div>
+
+                    <div class="card-galeria">
+                        <img src="imagemaqui" alt="Etapa do desenvolvimento 2" class="img-galeria">
+                        <div class="legenda-galeria">
+                            <p>textoaqui</p>
+                        </div>
+                    </div>
+
+                    <div class="card-galeria">
+                        <img src="imagemaqui" alt="Etapa do desenvolvimento 3" class="img-galeria">
+                        <div class="legenda-galeria">
+                            <p>textoaqui</p>
+                        </div>
+                    </div>
 
                 </div>
             </section>
