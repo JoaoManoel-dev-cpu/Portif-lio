@@ -108,12 +108,68 @@
             object-fit: cover;
             background-color: #e2e8f0;
             border-bottom: 1px solid #e2e8f0;
+            cursor: zoom-in; /* Indica visualmente que a imagem pode ser ampliada */
+            transition: opacity 0.2s ease;
+        }
+        .img-galeria:hover {
+            opacity: 0.9;
         }
         .legenda-galeria {
             padding: 16px;
             font-size: 14px;
             color: #334155;
             line-height: 1.5;
+        }
+
+        /* Estilos do Modal (Zoom / Lightbox) */
+        .modal-zoom {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            inset: 0;
+            background-color: rgba(15, 23, 42, 0.88);
+            backdrop-filter: blur(4px);
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 24px;
+        }
+        .modal-zoom.ativo {
+            display: flex;
+            animation: fadeIn 0.2s ease;
+        }
+        .modal-conteudo {
+            max-width: 90%;
+            max-height: 80vh;
+            border-radius: 8px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4);
+            border: 1px solid #334155;
+            object-fit: contain;
+        }
+        .modal-legenda {
+            color: #f8fafc;
+            margin-top: 14px;
+            font-size: 14px;
+            text-align: center;
+            max-width: 650px;
+        }
+        .fechar-modal {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: #f8fafc;
+            font-size: 32px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.2s ease;
+            line-height: 1;
+        }
+        .fechar-modal:hover {
+            color: #38bdf8;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
     </style>
 </head>
@@ -234,7 +290,7 @@
 
             <section class="secao secao-galeria">
                 <h2><i class="fa-solid fa-images"></i> Código do Portifólio</h2>
-                <p>O código por trás do portifólio!</p>
+                <p>O código por trás do portifólio! (Clique nas imagens para ampliar)</p>
                 
                 <div class="grid-galeria">
                     
@@ -265,6 +321,49 @@
         </main>
 
     </div>
+
+    <div id="modalZoom" class="modal-zoom">
+        <span class="fechar-modal" id="btnFecharModal" title="Fechar">&times;</span>
+        <img class="modal-conteudo" id="imgAmpliada" alt="">
+        <p class="modal-legenda" id="legendaAmpliada"></p>
+    </div>
+
+    <script>
+        const modal = document.getElementById('modalZoom');
+        const imgAmpliada = document.getElementById('imgAmpliada');
+        const legendaAmpliada = document.getElementById('legendaAmpliada');
+        const btnFechar = document.getElementById('btnFecharModal');
+        const imagens = document.querySelectorAll('.img-galeria');
+
+        // Abre o zoom ao clicar em qualquer imagem da galeria
+        imagens.forEach(img => {
+            img.addEventListener('click', () => {
+                modal.classList.add('ativo');
+                imgAmpliada.src = img.src;
+                imgAmpliada.alt = img.alt;
+                
+                // Pega o texto da legenda do mesmo card para exibir abaixo da imagem ampliada
+                const textoCard = img.parentElement.querySelector('.legenda-galeria p');
+                legendaAmpliada.textContent = textoCard ? textoCard.textContent : img.alt;
+            });
+        });
+
+        btnFechar.addEventListener('click', () => {
+            modal.classList.remove('ativo');
+        });
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.remove('ativo');
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.classList.contains('ativo')) {
+                modal.classList.remove('ativo');
+            }
+        });
+    </script>
 
 </body>
 </html>
